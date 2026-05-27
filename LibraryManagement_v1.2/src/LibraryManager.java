@@ -49,6 +49,9 @@ public class LibraryManager {
             this.currentUser = user; // 로그인 성공 시 현재 사용자 저장
             return true;
         }
+        if (Character.isDigit(id.charAt(0))) {
+            System.out.println("다시 입력하세요.");
+        }
         return false;
     }
 
